@@ -4,5 +4,6 @@ namespace Gymbokning.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        public ICollection<GymClass> AttendedClasses { get; set; } = new List<GymClass>();
     }
 }
